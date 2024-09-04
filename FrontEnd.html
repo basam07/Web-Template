@@ -1,160 +1,245 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>YellowZip</title>
     <link rel="stylesheet" href="Style.css">
 </head>
+
 <body>
     <header class="site-header">
+        <nav class="navbar">
+            <div class="logo">
+                <img src="/Pics/Logo - YellowZip Medium.png" alt="YellowZip Logo">
+            </div>
+            <div class="box">
+                <p>Car Detailer Biz</p>
+                <div class="divider"></div>
+                <form action="#">
+                    <input type="text" placeholder="Houston, Tx 77077" name="search">
+                    <button>
+                        <img src="/Pics/Vector-6.png" alt="Search" class="btn-search">
+                    </button>
+                </form>
+            </div>
+            <ul class="nav-links">
+                <li class="box"><a href="#"><b>About</b></a></li>
+                <li class="box"><a href="#"><b>Advertise</b></a></li>
+            </ul>
+            <ul class="nav-btn" id="nav-btn">
+                <li class="nav-btns"><a href="#">
+                        <img src="/Pics/Vector-4.png" alt="Neighborly News">
+                        <p>Neighborly News</p>
+                    </a></li>
+                <li class="nav-btns"><a href="#">
+                        <img src="/Pics/Vector-5.png" alt="Directory">
+                        <p>Directory</p>
+                    </a></li>
+                <li class="nav-btns"><a href="#">
+                        <img src="/Pics/Frame 1000009073.png" alt="Ask a Pro">
+                        <p>Ask a Pro</p>
+                    </a></li>
+                <li class="nav-btns"><a href="#">
+                        <img src="/Pics/Vector-3.png" alt="Job">
+                        <p>Job</p>
+                    </a></li>
+                <li class="nav-btns"><a href="#">
+                        <img src="/Pics/Vector-2.png" alt="Biz ofr Sale">
+                        <p>Biz ofr Sale</p>
+                    </a></li>
+                <li class="nav-btns"><a href="#">
+                        <img src="/Pics/Vector-1.png" alt="Fund Me">
+                        <p>Fund Me</p>
+                    </a></li>
+                <li class="nav-btns"><a href="#">
+                        <img src="/Pics/Vector.png" alt="Deals">
+                        <p>Deals</p>
+                    </a></li>
+            </ul>
+        </nav>
         <div class="container">
-            <nav class="navbar">
-                <div class="logo">
-                    <img src="/Pics/Logo - YellowZip Medium.png" alt="YellowZip Logo">
+            <div class="hero-1">
+                <p>An Open Honest Neighborhood Platform <a href="#">Coming 2024</a></p>
+            </div>
+            <div class="hero-2">
+                <h2>Powered By</h2>
+                <p>Neighborhood Stars That Truly Care</p>
+                <div class="table">
+                    <ul>
+                        <li>Neighborhood News</li>
+                        <li>
+                            <img src="/Pics/Tick.png" alt="Tick">
+                            <p id="tick">School Happenings</p>
+                        </li>
+                        <li>
+                            <img src="/Pics/Tick.png" alt="Tick">
+                            <p id="tick">Advice</p>
+                        </li>
+                        <li>
+                            <img src="/Pics/Tick.png" alt="Tick">
+                            <p id="tick">Event</p>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>Small Business Directory</li>
+                        <li>
+                            <img src="/Pics/Tick.png" alt="Tick">
+                            <p id="tick">400+ Categories</p>
+                        </li>
+                        <li>
+                            <img src="/Pics/Tick.png" alt="Tick">
+                            <p id="tick">Fre listing</p>
+                        </li>
+                        <li>
+                            <img src="/Pics/Tick.png" alt="Tick">
+                            <p id="tick">Most Liked</p>
+                        </li>
+
+                    </ul>
+                    <ul>
+                        <li>Ask a Pro</li>
+                        <li>
+                            <img src="/Pics/Tick.png" alt="Tick">
+                            <p id="tick">Business Leads-Bids</p>
+                        </li>
+                        <li>
+                            <img src="/Pics/Tick.png" alt="Tick">
+                            <p id="tick">400+ Categories</p>
+                        </li>
+                        <li>
+                            <img src="/Pics/Tick.png" alt="Tick">
+                            <p id="tick">Neighborhood Comments</p>
+                        </li>
+                    </ul>
                 </div>
-                <ul class="nav-links">
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Advertise</a></li>
-                    <li><a href="#">Jobs</a></li>
-                </ul>
-            </nav>
-            <div class="hero-section">
-                <h1>An Open Honest Neighborhood Platform</h1>
-                <p>Powered by Neighborhood Stars That Truly Care</p>
+
+            </div>
+            <div class="hero-3">
                 <div class="cta-buttons">
-                    <a href="#" class="btn btn-primary">Star Sign In</a>
-                    <a href="#" class="btn btn-secondary">Sign Up</a>
-                    <a href="#" class="btn btn-secondary">Star Program</a>
+                    <a href="#" class="star-btn">
+                        <img src="/Pics/lock.png" alt="">
+                        Star Sign In
+                    </a>
+                    <a href="#" class="star-btn">Sign Up</a>
+                    <a href="#" class="star-btn">Star Program</a>
                 </div>
             </div>
+        </div>
+        <div class="hero-4">
+            <h2>Be A Star</h2>
+            <ul>
+                <li>Real Estate Agent</li>
+                <li>Insurance</li>
+                <li>Finance</li>
+                <li>Beauty</li>
+            </ul>
         </div>
     </header>
 
     <section class="sign-up-options">
         <div class="container">
             <h2>Three Sign-Up Options</h2>
+            <p>Something for Everyone</p>
             <div class="options-grid">
-                <div class="option">
-                    <h3>For Neighbors</h3>
-                    <p>Explore a vast array of over 400 categories and interests.</p>
-                    <a href="#" class="btn btn-signup">Sign Up</a>
+                <div class="option-1">
+                    <img src="/Pics/Rectangle-4.jpg" alt="Pic 1">
                 </div>
-                <div class="option">
-                    <h3>For Businesses</h3>
-                    <p>Add your business to a modern-day local directory.</p>
-                    <a href="#" class="btn btn-signup">Sign Up</a>
+                <div class="option-2" id="color-1">
+                    <h3>For Neighbor</h3>
+                    <p>Explore a vast array of over 400 categories and interests, all conveniently located nearby for
+                        your browsing pleasure. <br><br>
+                        <img src="/Pics/Rectangle-1.png" alt="Line">Sign up for neighborhoodnews tailored to your
+                        interests.
+                    </p>
+                    <a href="#" class="signup-btn">Sign Up</a>
                 </div>
-                <div class="option">
-                    <h3>For Agencies & Multi Brands</h3>
-                    <p>A single dashboard to centralize and oversee multiple brands.</p>
-                    <a href="#" class="btn btn-signup">Sign Up</a>
+            </div>
+            <div class="options-grid">
+                <div class="option-2" id="color-2">
+                    <h3>For Business</h3>
+                    <p>Add your business ta a moderan-dat local directory offering afordable leads and social
+                        engagements in our Neighborhood News program. <br><br>
+                        <img src="/Pics/Rectangle.png" alt="Line"> The same control panel for a home-based business as a
+                        national business. Grow customers near you. Free listing.
+                    </p>
+                    <a href="#" class="signup-btn">Sign Up</a>
+                </div>
+                <div class="option-1">
+                    <img src="/Pics/Rectangle-3.jpg" alt="Pic 2">
+                </div>
+            </div>
+            <div class="options-grid">
+                <div class="option-1">
+                    <img src="/Pics/Rectangle-2.jpg" alt="Pic 3">
+                </div>
+                <div class="option-2" id="color-3">
+                    <h3>For Agency & Multi Brands</h3>
+                    <p> A single dashboard to centralize and oversee multiple brands and clints. Bring your clints on
+                        board with YellowZip and empower them to connect with their local community.</p>
+                    <a href="#" class="signup-btn">Sign Up</a>
                 </div>
             </div>
         </div>
     </section>
 
     <section class="neighborly-news">
-        <div class="container">
-            <h2>Neighborly News</h2>
-            <p>Get the neighborhood scoop here.</p>
-            <a href="#" class="btn btn-signup">Sign Up</a>
+        <div class="news-img">
+            <img src="/Pics/Rectangle-1.jpg" alt="">
         </div>
+        <div class="news-text">
+            <div class="text-1">
+                <h1>Neighborly News</h1>
+                <p>Get the neighborhood scoop here.</p>
+            </div>
+            <div class="text-2">
+                <p>You need to b an authorized user to post</p>
+                <button class="signup-btn">Sign Up</button>
+            </div>
+        </div>
+        <div class="news-details">
+            <p>Free speech, no bullying, weekly world events, local events, school updates, advice, photos, lost and
+                found, 'no negatives' zone, 'comment freely' zone, no mention of businesses (that's why we have a free
+                Directory), and no ads. Ask, comment, engage, learn and have fun.</p>
+        </div>
+
     </section>
 
     <footer class="site-footer">
         <div class="container">
-            <div class="footer-content">
-                <div class="footer-logo">
-                    <img src="footer-logo.png" alt="YellowZip Logo">
-                </div>
-                <ul class="footer-nav">
-                    <li><a href="#">Privacy</a></li>
-                    <li><a href="#">Terms of Use</a></li>
-                    <li><a href="#">Advertise</a></li>
+            <div class="f-table">
+                <ul>
+                    <img src="/Pics/Frame.png" alt="">
                 </ul>
-            </div>
-        </div>
-    </footer>
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>YellowZip Template</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <header class="site-header">
-        <div class="container">
-            <nav class="navbar">
-                <div class="logo">
-                    <img src="logo.png" alt="YellowZip Logo">
-                </div>
-                <ul class="nav-links">
+                <ul>
+                    <li><a href="#">Site Navigation</a></li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Advertise</a></li>
                     <li><a href="#">About</a></li>
-                    <li><a href="#">Advertise</a></li>
-                    <li><a href="#">Jobs</a></li>
                 </ul>
-            </nav>
-            <div class="hero-section">
-                <h1>An Open Honest Neighborhood Platform</h1>
-                <p>Powered by Neighborhood Stars That Truly Care</p>
-                <div class="cta-buttons">
-                    <a href="#" class="btn btn-primary">Star Sign In</a>
-                    <a href="#" class="btn btn-secondary">Sign Up</a>
-                    <a href="#" class="btn btn-secondary">Star Program</a>
-                </div>
-            </div>
-        </div>
-    </header>
-
-    <section class="sign-up-options">
-        <div class="container">
-            <h2>Three Sign-Up Options</h2>
-            <div class="options-grid">
-                <div class="option">
-                    <h3>For Neighbors</h3>
-                    <p>Explore a vast array of over 400 categories and interests.</p>
-                    <a href="#" class="btn btn-signup">Sign Up</a>
-                </div>
-                <div class="option">
-                    <h3>For Businesses</h3>
-                    <p>Add your business to a modern-day local directory.</p>
-                    <a href="#" class="btn btn-signup">Sign Up</a>
-                </div>
-                <div class="option">
-                    <h3>For Agencies & Multi Brands</h3>
-                    <p>A single dashboard to centralize and oversee multiple brands.</p>
-                    <a href="#" class="btn btn-signup">Sign Up</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="neighborly-news">
-        <div class="container">
-            <h2>Neighborly News</h2>
-            <p>Get the neighborhood scoop here.</p>
-            <a href="#" class="btn btn-signup">Sign Up</a>
-        </div>
-    </section>
-
-    <footer class="site-footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-logo">
-                    <img src="footer-logo.png" alt="YellowZip Logo">
-                </div>
-                <ul class="footer-nav">
-                    <li><a href="#">Privacy</a></li>
+                <ul>
+                    <li><a href="#">Agrements</a></li>
+                    <li><a href="#">Privscy</a></li>
                     <li><a href="#">Terms of Use</a></li>
-                    <li><a href="#">Advertise</a></li>
+                    <li><a href="#">Terms of Abuse</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">Sign-Up</a></li>
+                    <li><a href="#">Neighbor</a></li>
+                    <li><a href="#">businesses</a></li>
+                    <li><a href="#">Agencies</a></li>
+                    <li><a href="#">Franchisors</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">Stay Connected</a></li>
+                    <li><a href="#"><img src="/Pics//Group.png" alt="facebook" id="facebook">YellowZip</a></li>
                 </ul>
             </div>
         </div>
+        <hr>
+        <p class="copyright">Copyright © 2023 YellowZip. All rights reserved.</p>
     </footer>
 </body>
+
 </html>

@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+/* Global Styles */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -6,28 +6,162 @@ body {
 }
 
 .container {
-    width: 85%;
+    width: 90%;
     margin: 0 auto;
+    
 }
 
+/* Header Styles */
 .site-header {
-    background: #ffffff;
-    padding: 20px 0;
-    text-align: center;
+    
+    background-image: url('/Pics/home.jpg');
+    background-size: cover;
+    height: 100vh;    
 }
 
 .navbar {
+    text-align: center;
     display: flex;
-    justify-content: space-between;
+    justify-content: left;
     align-items: center;
+    padding: 0 80px;
+    background-color: rgba(255, 255, 255, 0.64);
 }
 
 .logo img {
-    max-height: 50px;
+    max-height: 35px;
+    margin-right: 13px;
 }
 
-.nav-links {
+.nav-links, .nav-btn{
     list-style: none;
+    display: flex;
+    gap: 7px;
+    padding-left: 5px;
+    margin: 12px 0;
+}
+
+#nav-btn {
+    margin-left: 11%;
+}
+
+.nav-links a , .nav-btn a {
+    text-decoration: none;
+    color: #333;
+}
+
+.nav-btn img{
+    height: 20px;
+    margin-bottom: 3px;
+}
+
+.nav-btn p{
+    margin: 5px 0 0 0;
+    font-size: 10px;
+}
+
+.nav-btns{
+    margin: 0 10px;
+}
+
+/* Divider Styles */
+.divider {
+    border-left: 1px solid #000000;
+    height: 15px;
+    margin-left: 20px;
+}
+
+/* Search Box Styles */
+.box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.89);
+    border: 1px solid #000000;
+    border-radius: 20px;
+    padding: 7px 20px;
+    margin: 0 5px;
+    font-size: 13px;
+}
+
+.box form {
+    width: 200px;
+}
+
+.box p {
+    margin: 0;
+}
+
+.box input {
+    border: none;
+    width: 60%;
+    background-color: transparent;
+}
+
+.box button {
+    border: none;
+    background: none;
+}
+
+.btn-search {
+    height: 13px;
+}
+
+/* Hero Section */
+.hero-1, .hero-2 {
+    background-color: #ffffffbd;
+    width: 48%;
+    border-radius: 10px;
+    padding: 10px 20px;
+    margin-top: 40px;
+}
+
+.hero-1 p {
+    font-size: 25px;
+    font-weight: bold;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #000000;
+    margin: 0;
+}
+
+.hero-1 a {
+    text-decoration: none;
+    font-size: 20px;
+    color: #3400d0;
+}
+
+.hero-2{
+    margin-top: 30px;
+}
+
+.table{
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero-2 h2 {
+    font-size: 30px;
+    margin: 10px 0 0 5px ;
+}
+
+.hero-2 p {
+    font-size: 31px;
+    color: #e00000;
+    font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    margin: 0 0 0 5px;
+}
+
+.hero-2 ul {
+    gap: 5px;
+    list-style: none;
+    margin: 11px 0 0 5px;
+    padding: 0;
+    font-size: 17px;
+    color: #006ce0;
+}
+
+.hero-2 li {
     display: flex;
     gap: 20px;
 }
@@ -45,271 +179,258 @@ body {
     margin: 40px 0;
 }
 
-.hero-section h1 {
-    font-size: 2.5rem;
-    color: #444;
+.hero-2 img{
+    height: 10px;
 }
 
-.hero-section p {
-    font-size: 1.2rem;
-    margin-bottom: 20px;
-}
-
-.cta-buttons {
-    display: flex;
-    gap: 10px;
-    justify-content: center;
-}
-
-.btn {
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-    font-size: 1rem;
-}
-
-.btn-primary {
-    background: #ffcc00;
-    color: #fff;
-}
-
-.btn-secondary {
-    background: #007bff;
-    color: #fff;
-}
-
-.sign-up-options {
-    background: #f9f9f9;
-    padding: 40px 0;
-}
-
-.sign-up-options h2 {
-    text-align: center;
-    font-size: 2rem;
-    margin-bottom: 20px;
-}
-
-.options-grid {
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
-}
-
-.option {
-    background: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    flex: 1;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-}
-
-.option h3 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-}
-
-.option p {
-    font-size: 1rem;
-    margin-bottom: 20px;
-}
-
-.btn-signup {
-    background: #28a745;
-    color: #fff;
-}
-
-.neighborly-news {
-    padding: 40px 0;
-    text-align: center;
-    background: #fff;
-}
-
-.neighborly-news h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-}
-
-.site-footer {
-    background: #333;
-    color: #fff;
-    padding: 20px 0;
-}
-
-.footer-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.footer-logo img {
-    max-height: 40px;
-}
-
-.footer-nav {
-    list-style: none;
-    display: flex;
-    gap: 15px;
-}
-
-.footer-nav a {
-    color: #fff;
-    text-decoration: none;
-}
-=======
-body {
+#tick{
+    font-size: 18px;
+    color: #e00000;
+    font-weight: 400;
     margin: 0;
-    font-family: Arial, sans-serif;
-    color: #000000;
 }
 
-.container {
-    width: 85%;
-    margin: 0 auto;
-}
-
-.site-header {
-    background: #ffffff;
-    padding: 20px 0;
-    text-align: center;
-}
-
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.logo img {
-    max-height: 50px;
-}
-
-.nav-links {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-}
-
-.nav-links li {
-    display: inline;
-}
-
-.nav-links a {
-    text-decoration: none;
-    color: #333;
-}
-
-.hero-section {
-    margin: 40px 0;
-}
-
-.hero-section h1 {
-    font-size: 2.5rem;
-    color: #444;
-}
-
-.hero-section p {
-    font-size: 1.2rem;
-    margin-bottom: 20px;
+.hero-3{
+    width: 48%;
+    margin-top: 40px;
 }
 
 .cta-buttons {
     display: flex;
-    gap: 10px;
+    gap: 30px;
     justify-content: center;
+    align-items: center;
 }
 
-.btn {
-    padding: 10px 20px;
+.star-btn {
+    background-color: #e00000;
+    padding: 10px 25px;
     text-decoration: none;
-    border-radius: 5px;
-    font-size: 1rem;
+    border-radius: 22px;
+    font-size: 14px;
+    color: #ededed;
 }
 
-.btn-primary {
-    background: #ffcc00;
-    color: #fff;
+.star-btn img{
+    height: 15px;
+    margin-right: 5px;
 }
 
-.btn-secondary {
-    background: #007bff;
-    color: #fff;
+.hero-4{
+    width: 35%;
+    margin-top: 90px;
+    background-color: #ffffffc1;
+    border-radius: 10px;
+    padding: 20px;
+    margin-left: 32%;
 }
 
+.hero-4 h2{
+    font-size: 30px;
+    margin: 5px;
+    text-align: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #f54f4f;
+}
+
+.hero-4 ul{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0;
+}
+
+/* Sign-Up Options Section */
 .sign-up-options {
-    background: #f9f9f9;
+    background: #ffffff;
     padding: 40px 0;
 }
 
 .sign-up-options h2 {
     text-align: center;
-    font-size: 2rem;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.sign-up-options p {
+    text-align: center;
+    font-size: 12px;
     margin-bottom: 20px;
 }
 
 .options-grid {
     display: flex;
-    justify-content: space-between;
-    gap: 20px;
-}
-
-.option {
-    background: #fff;
+    justify-content: center;
+    gap: 9px;
     padding: 20px;
-    border-radius: 8px;
-    flex: 1;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-.option h3 {
-    font-size: 1.5rem;
+.option-1 img{
+    height: 350px;
+    border-radius: 10px;
+}
+
+.option-2{
+    border-radius: 10px;
+    padding: 40px;
+    width: 30%;
+    display: grid;
+    height: 270px;
+}
+
+.option-2 h3{
+    font-size: 24px;
+    color: #1f1f1f;
+    margin-top: 30px;
+    margin-bottom: 25px;
+    text-align: left;
+}
+
+.option-2 p{
+    font-size: 14px;
+    color: #5c5c5c;
+    margin-bottom: 25px;
+    text-align: left;
+}
+
+.option-2 img{
+    height: 15px;
+    margin-right: 10px;
+}
+
+#color-1{
+    background-color: #fff2ea;    
+}
+#color-2{
+    background-color: #eaf7ed;
+}
+#color-3{
+    background-color: #e9efff;
+}
+
+.signup-btn {
+    width: 100px;
+    text-align: center;
+    background-color: #ffd75e;
+    color: #1f1f1f;
+    font-size: 14px;
+    padding: 10px 10px;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    margin-bottom: 70px;
+    margin-top: 10px;
+    border: none !important;
+}
+
+.signup-btn:hover {
+    background-color: #e6c04f;
+}
+
+/* Neighborly News Section */
+.neighborly-news {
+    width: 72%;
+    margin: 30px auto;
+    padding: 20px 20px;
+    border: 2px solid rgba(181, 181, 181, 0.482);
+    border-radius: 10px;
+}
+
+.news-img img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.news-text {
+    display: flex;
+    justify-content: space-between;
     margin-bottom: 10px;
 }
 
-.option p {
-    font-size: 1rem;
-    margin-bottom: 20px;
+.text-1{
+    width: 50%;
+    margin: 20px 0 0 0;
 }
 
-.btn-signup {
-    background: #28a745;
-    color: #fff;
+.text-1 h1 {
+    font-size: 32px;
+    margin: 0;
 }
 
-.neighborly-news {
-    padding: 40px 0;
-    text-align: center;
-    background: #fff;
+.text-1 p {
+    font-size: 13px;
+    margin: 10px 0 0 0;
 }
 
-.neighborly-news h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
+.text-2{
+    width: 50%;
+    padding: 20px;
+    display: flex;
+    margin: 10px 0 -50px 100px;
 }
 
+.text-2 p{
+    font-size: 13px;
+    margin: 20px 50px 0 50px;
+    color: #a0a0a0;
+}
+
+.news-details{
+    font-size: 15px;
+    color: #545454;
+}
+
+
+/* Footer Styles */
 .site-footer {
-    background: #333;
+    background: #12111f;
     color: #fff;
-    padding: 20px 0;
+    padding: 50px 0 10px 0;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 2;
+    
 }
 
-.footer-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.f-table img {
+    height: 60px;
 }
 
-.footer-logo img {
-    max-height: 40px;
-}
-
-.footer-nav {
+.site-footer ul {
+    margin: 0 50px;
     list-style: none;
-    display: flex;
-    gap: 15px;
+    text-decoration: none;
+    color: white;
 }
 
-.footer-nav a {
+.site-footer a {
     color: #fff;
     text-decoration: none;
 }
->>>>>>> 28c9b6e (first commit)
+
+.f-table{
+    display: flex;
+    justify-content: space-between; 
+}
+
+.f-table li{
+    display: flex; 
+    align-items: center;
+
+}
+
+#facebook{
+    height: 15px;
+    margin: 0 10px 0 0;
+}
+
+hr{
+    color: #cdcdcd;
+}
+
+.copyright{
+    text-align: center;
+    font-size: 12px;
+    margin: 20px 0 0 0;
+    color: #a0a0a0;
+}
